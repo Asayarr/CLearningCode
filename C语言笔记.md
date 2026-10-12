@@ -743,13 +743,3 @@ gcc -g -fsanitize=address 文件.c -o 输出 -Wall -Wextra
 | `class`（引用类型，有方法）| `struct`（值类型，只有数据；方法用函数实现）|
 | `new Student()` | `Student s;`（栈）或 `malloc`（堆）|
 | `File.ReadAllText` | `fopen` + `fgets` + `fclose` |
-
----
-
-## 后续课程
-
-- [x] 结构体 `struct`（第 7 课）
-- [x] 动态内存 `malloc` / `free`（第 8 课）
-- [x] 文件读写（第 9 课）
-- [ ] **指针进阶**：二级指针、函数指针（第 10 课）
-- [ ] 综合项目：通讯录管理系统
