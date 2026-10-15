@@ -16,5 +16,8 @@ void add_contact(Contact *list, int *count);
 void list_contacts(Contact *list, int count);
 void find_contact(Contact *list, int count);
 void delete_contact(Contact *list, int *count);
+void save_contacts(Contact *list, int count);
+void load_contacts(Contact *list, int *count);
+
 
 #endif
