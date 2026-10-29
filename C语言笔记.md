@@ -693,7 +693,22 @@ gcc -g -fsanitize=address 文件.c -o 输出 -Wall -Wextra
 | `rand` / `srand` | 随机数 |
 
 ### `<math.h>`
-`sqrt`、`pow`、`fabs` 等；编译时可能需加 `-lm`。
+
+| 函数 | 作用 | 例子 |
+|------|------|------|
+| `sqrt(x)` | 平方根 | `sqrt(16)` = 4.0 |
+| `pow(x,y)` | x 的 y 次方 | `pow(2,10)` = 1024 |
+| `fabs(x)` | 浮点绝对值 | `fabs(-3.5)` = 3.5 |
+| `ceil(x)` | 向上取整 | `ceil(3.2)` = 4 |
+| `floor(x)` | 向下取整 | `floor(3.8)` = 3 |
+| `round(x)` | 四舍五入 | `round(3.5)` = 4 |
+| `fmod(x,y)` | 浮点取余 | `fmod(7.5,2)` = 1.5 |
+| `log(x)` / `log10(x)` | 自然对数 / 以10为底 | `log10(1000)` = 3 |
+| `exp(x)` | e 的 x 次方 | `exp(1)` = 2.718 |
+| `sin/cos/tan(x)` | 三角函数（弧度）| |
+
+⚠️ `abs` 是 `<stdlib.h>` 的**整数**绝对值，`fabs` 才是 `<math.h>` 的**浮点**绝对值。
+> Linux 下编译需加 `-lm`：`gcc a.c -o a -lm`。
 
 ---
 
